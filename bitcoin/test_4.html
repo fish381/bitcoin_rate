@@ -1,0 +1,14 @@
+<body>
+  
+    <input type="checkbox" id="cena" onchange="myfunction();"/>
+<script>
+var audio = new Audio('niconeesound.mp3'),
+    cenaCheckbox = document.getElementById('cena'),
+    myfunction = function () {
+      if (cenaCheckbox.checked) {
+        audio.play();
+      }
+    };
+</script>
+    </body>
+    
