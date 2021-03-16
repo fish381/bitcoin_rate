@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<head>
+    <body>
+  
+        <input type="checkbox" id="cena" onchange="myfunction();"/>
+    <script>
+    var audio = new Audio('niconeesound.mp3'),
+        cenaCheckbox = document.getElementById('cena'),
+        myfunction = function () {
+          if (cenaCheckbox.checked) {
+            audio.play();
+          }
+        };
+    </script>
+        </body>
+</label>
+        
+      
+    <title> bitcoin tracker</title>
+    <p>
+        <label>i will alert you when the maket falls</label> 
+         <h3>by</h3> 
+     <input id="textbox" type="text">
+<button id="button">set for checking</button>
+ <script>
+     
+
+ s = document.getElementsByName('org_id')[0];
+ 
+s.addEventListener("change", changeOrg);
+
+function changeOrg(){
+  var value = s.options[s.selectedIndex].value;
+  console.log(value);
+  value=localStorage.rof
+  console.log(localStorage.rof)
+}
+changeOrg(); 
+</script>
+    <a href="https://www.coindesk.com/price/bitcoin">Powered by CoinDesk </a>
+    <div id="data" />
+	<script type="text/javascript">
+		var xmlhttp = new XMLHttpRequest();
+		var url = "https://api.coindesk.com/v1/bpi/currentprice/aud.json";
+		
+		xmlhttp.onreadystatechange = function() {
+			if (this.readyState == 4  &&  this.status == 200) {
+				var json = JSON.parse(this.responseText);
+				parseJson(json);
+			}		
+		}; 
+		
+		xmlhttp.open("GET", url, true);
+		xmlhttp.send();
+		
+		function parseJson(json) {
+			var time = "<b>Last Updated : " + json["time"]["updated"] + "</b>";
+			var audValue = "1 BTC equals to aud$;" + json["bpi"]["AUD"]["rate"];
+			document.getElementById("data").innerHTML =
+				time + "<br />" + audValue;
+                audvalue = ""+ json["bpi"]["AUD"]["rate"];
+                
+                var inputval= audvalue;
+                console.log("" + inputval);                
+                var inputval = inputval.replace(/[#@,-]+/g, "");
+  console.log(""+ inputval)
+  var E = (inputval - localStorage.messages)
+  console.log("return: "+(inputval - localStorage.messages) )
+ console.log("by: "+(inputval- E))
+                
+    }
+
+
+	</script>
+     <script>
+      setInterval(reload, 1000) 
+function reload() {
+        
+        s = document.getElementsByName('org_id')[0];
+
+s.addEventListener("change", changeOrg);
+
+function changeOrg(){
+ var value = s.options[s.selectedIndex].value;
+ console.log(value);
+ value=localStorage.rof
+ console.log(localStorage.rof)
+}
+changeOrg(); 
+
+</script>
+   
+   <div id="data" />
+   <script type="text/javascript">
+
+       var xmlhttp = new XMLHttpRequest();
+       var url = "https://api.coindesk.com/v1/bpi/currentprice/aud.json";
+       
+       xmlhttp.onreadystatechange = function() {
+           if (this.readyState == 4  &&  this.status == 200) {
+               var json = JSON.parse(this.responseText);
+               parseJson(json);
+           }		
+       }; 
+       
+       xmlhttp.open("GET", url, true);
+       xmlhttp.send();
+       
+       function parseJson(json) {
+           var time = "<b>Last Updated : " + json["time"]["updated"] + "</b>";
+           var audValue = "1 BTC equals to aud$;" + json["bpi"]["AUD"]["rate"];
+           document.getElementById("data").innerHTML =
+               time + "<br />" + audValue;
+               audvalue = ""+ json["bpi"]["AUD"]["rate"];
+              
+            } 
+    };
+            
+       
+</script>
+
+    <body>
+     <script src="code.index.js"> </script>  
+     <br></br>
+    
+     <script>
+        if (audvalue == E || audvalue < E) {
+
+alert("bang! the rate is lower!")
+
+
+
+}
+        
+function myfunction(){
+var audio = new audio('C:\Users\001000\OneDrive - Victory Lutheran College\code\bitcoin\niconeesound.mp3');
+audio.play();
+}
+        </script>
+     
+    </body>
+
+</head>
+
