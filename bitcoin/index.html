@@ -73,7 +73,7 @@ changeOrg();
 
 	</script>
      <script>
-      setInterval(reload, 1000) 
+      
 function reload() {
         
         s = document.getElementsByName('org_id')[0];
@@ -91,7 +91,7 @@ changeOrg();
 </script>
    
    <div id="data" />
-   <script type="text/javascript">
+   <script>
 
        var xmlhttp = new XMLHttpRequest();
        var url = "https://api.coindesk.com/v1/bpi/currentprice/aud.json";
@@ -112,6 +112,7 @@ changeOrg();
            document.getElementById("data").innerHTML =
                time + "<br />" + audValue;
                audvalue = ""+ json["bpi"]["AUD"]["rate"];
+              
                if(audvalue == E || audvalue < E) {
 
 alert("bang! the rate is lower!")
@@ -120,7 +121,7 @@ alert("bang! the rate is lower!")
                
             } 
     };
-            
+    setInterval(reload, 1000)         
     
 
 </script>
