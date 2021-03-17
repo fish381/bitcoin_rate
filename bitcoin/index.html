@@ -11,12 +11,9 @@
             audio.play();
           }
         };
-        
     </script>
         </body>
-</label>
-        
-      
+    </label>
     <title> bitcoin tracker</title>
     <p>
         <label>i will alert you when the maket falls</label> 
@@ -24,12 +21,8 @@
      <input id="textbox" type="text">
 <button id="button">set for checking</button>
  <script>
-     
-
  s = document.getElementsByName('org_id')[0];
- 
 s.addEventListener("change", changeOrg);
-
 function changeOrg(){
   var value = s.options[s.selectedIndex].value;
   console.log(value);
@@ -50,7 +43,6 @@ changeOrg();
 				parseJson(json);
 			}		
 		}; 
-		
 		xmlhttp.open("GET", url, true);
 		xmlhttp.send();
 		
@@ -67,31 +59,23 @@ changeOrg();
   console.log(""+ inputval)
   var E = (inputval - localStorage.messages)
   console.log("return: "+(inputval - localStorage.messages) )
- console.log("by: "+(inputval- E))
-                
+ console.log("by: "+(inputval- E))               
     }
-
-
 	</script>
      <script>
          function relode() {
         s = document.getElementsByName('org_id')[0];
 
 s.addEventListener("change", changeOrg);
-
-
  var value = s.options[s.selectedIndex].value;
  console.log(value);
  value=localStorage.rof
  console.log(localStorage.rof)
 }
 changeOrg(); 
-
 </script>
-   
    <div id="data" />
    <script>
-
        var xmlhttp = new XMLHttpRequest();
        var url = "https://api.coindesk.com/v1/bpi/currentprice/aud.json";
        
@@ -101,7 +85,6 @@ changeOrg();
                parseJson(json);
            }		
        }; 
-       
        xmlhttp.open("GET", url, true);
        xmlhttp.send();
        
@@ -120,9 +103,7 @@ if (cenaCheckbox.checked) {
           }               
 }
 }
-         
 </script>
-
     <body>
      <script src="code.index.js"> </script>  
      <br></br>
