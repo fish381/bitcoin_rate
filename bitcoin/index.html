@@ -11,6 +11,7 @@
             audio.play();
           }
         };
+        
     </script>
         </body>
 </label>
@@ -73,12 +74,12 @@ changeOrg();
 
 	</script>
      <script>
-         
+         function relode() {
         s = document.getElementsByName('org_id')[0];
 
 s.addEventListener("change", changeOrg);
 
-function changeOrg(){
+
  var value = s.options[s.selectedIndex].value;
  console.log(value);
  value=localStorage.rof
@@ -118,11 +119,8 @@ if (cenaCheckbox.checked) {
             audio.play();
           }               
 }
-            } 
-       
-    setInterval(relode,10000)         
-    
-
+}
+         
 </script>
 
     <body>
