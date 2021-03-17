@@ -73,7 +73,7 @@ changeOrg();
 
 	</script>
      <script>
-         function relode() {
+         
         s = document.getElementsByName('org_id')[0];
 
 s.addEventListener("change", changeOrg);
@@ -114,12 +114,13 @@ changeOrg();
                if(audvalue == E || audvalue < E) {
 
 alert("bang! the rate is lower!")
-               }
-               
-               
+if (cenaCheckbox.checked) {
+            audio.play();
+          }               
+}
             } 
-        };
-    setInterval(relode,10000)         
+       
+    setTimeout(relode,10000)         
     
 
 </script>
