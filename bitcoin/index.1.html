@@ -1,4 +1,6 @@
+<head>
 <script> 
+setInterval(function relode() {
    s = document.getElementsByName('org_id')[0];
 s.addEventListener("change", changeOrg);
 var value = s.options[s.selectedIndex].value;
@@ -34,5 +36,7 @@ if (cenaCheckbox.checked) {
      }               
 }
 }
-    
-</script> 
+} , 60000)
+
+</script>
+</head>
