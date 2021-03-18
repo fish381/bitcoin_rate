@@ -1,4 +1,17 @@
-dubble click index.html 
+to use the index.html or use the start_up_website.bat
+
+for index.html:
+dubble click on index.html
+and watch it run 
+type the amount you want to the bitcoin rate to drop bye 
+and click on the button to ask for the math to start 
+enjoy the work that is done 
+it will alurt you and play the sound if you wanted 
+
+
+useing start_up_website.bat:
+start start_up_website.bat 
+this will get every thing to run 
 and watch it run 
 type the amount you want to the bitcoin rate to drop bye 
 and click on the button to ask for the math to start 
