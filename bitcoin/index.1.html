@@ -1,6 +1,7 @@
 <body>
 <head>
         <script> 
+        setInterval(relode, 60000)
         (function relode () {
              s = document.getElementsByName('org\_id')[0];
               s.addEventListener("change", changeOrg);
@@ -9,10 +10,8 @@
                 value=localStorage.rof 
                 console.log(localStorage.rof) 
                 changeOrg(); 
-                  
                       var xmlhttp = new XMLHttpRequest(); 
                         var url = "https://api.coindesk.com/v1/bpi/currentprice/aud.json";
-
         xmlhttp.onreadystatechange = function() {
         if (this.readyState == 4  &&  this.status == 200) {
                   var json = JSON.parse(this.responseText);
@@ -36,9 +35,8 @@
         }
         }
     })
-        setInterval(relode, 60000)
-        </script>
         
+        </script>
         </head>
         <div id="data">
     </body>
