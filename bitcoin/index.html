@@ -62,48 +62,7 @@ changeOrg();
  console.log("by: "+(inputval- E))               
     }
 	</script>
-     <script>
-         function relode() {
-        s = document.getElementsByName('org_id')[0];
-
-s.addEventListener("change", changeOrg);
- var value = s.options[s.selectedIndex].value;
- console.log(value);
- value=localStorage.rof
- console.log(localStorage.rof)
-}
-changeOrg(); 
-</script>
-   <div id="data" />
-   <script>
-       var xmlhttp = new XMLHttpRequest();
-       var url = "https://api.coindesk.com/v1/bpi/currentprice/aud.json";
-       
-       xmlhttp.onreadystatechange = function() {
-           if (this.readyState == 4  &&  this.status == 200) {
-               var json = JSON.parse(this.responseText);
-               parseJson(json);
-           }		
-       }; 
-       xmlhttp.open("GET", url, true);
-       xmlhttp.send();
-       
-       function parseJson(json) {
-           var time = "<b>Last Updated : " + json["time"]["updated"] + "</b>";
-           var audValue = "1 BTC equals to aud$;" + json["bpi"]["AUD"]["rate"];
-           document.getElementById("data").innerHTML =
-               time + "<br />" + audValue;
-               audvalue = ""+ json["bpi"]["AUD"]["rate"];
-              
-               if(audvalue == E || audvalue < E) {
-
-alert("bang! the rate is lower!")
-if (cenaCheckbox.checked) {
-            audio.play();
-          }               
-}
-}
-</script>
+    
     <body>
      <script src="code.index.js"> </script>  
      <br></br>
