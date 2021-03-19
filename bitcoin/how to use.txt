@@ -17,3 +17,9 @@ type the amount you want to the bitcoin rate to drop bye
 and click on the button to ask for the math to start 
 enjoy the work that is done 
 it will alurt you and play the sound if you wanted 
+
+console.log(""+ audValue)
+        if(audvalue == E || audvalue < E) {
+        alert("bang! the rate is lower!")
+        if (cenaCheckbox.checked) {
+        audio.play();

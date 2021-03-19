@@ -16,6 +16,7 @@
              var xmlhttp = new XMLHttpRequest();
              var url = "https://api.coindesk.com/v1/bpi/currentprice/aud.json";
              
+             function relode (json) {
              xmlhttp.onreadystatechange = function() {
                if (this.readyState == 4  &&  this.status == 200) {
                  var json = JSON.parse(this.responseText);
@@ -32,6 +33,9 @@
                  time + "<br />" + audValue;
                          audvalue = ""+ json["bpi"]["AUD"]["rate"];
               }
+            }
+            
+            setInterval(relode, 60000)
                           </script>
 
         </head>
