@@ -35,13 +35,13 @@
                          audvalue = ""+ json["bpi"]["AUD"]["rate"];
               
               console.log(""+ audValue)
-        if(audvalue == E || audvalue < E) {
+        if(inputval == E || inputval < E) {
         alert("bang! the rate is lower!")
         if (cenaCheckbox.checked) {
         audio.play();
-        console.log("done")
         }
-        }}
+        }
+        console.log("done")}
             }
              
             setInterval(relode, 60000)
