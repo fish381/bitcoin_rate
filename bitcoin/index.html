@@ -32,7 +32,7 @@ function changeOrg(){
 changeOrg(); 
 </script>
     <a href="https://www.coindesk.com/price/bitcoin">Powered by CoinDesk </a>
-    <div id="data" />
+    <div id="data">
 	<script type="text/javascript">
 		var xmlhttp = new XMLHttpRequest();
 		var url = "https://api.coindesk.com/v1/bpi/currentprice/aud.json";
@@ -69,7 +69,6 @@ changeOrg();
       console.log("done")
       }    
       setInterval(relode, 60000)
-
 			var time = "<b>Last Updated : " + json["time"]["updated"] + "</b>";
 			var audValue = "1 BTC equals to aud$;" + json["bpi"]["AUD"]["rate"];
 			document.getElementById("data").innerHTML =
@@ -100,4 +99,3 @@ changeOrg();
      <script src="code.index.js"> </script>  
      <br></br>
 </head>
-
