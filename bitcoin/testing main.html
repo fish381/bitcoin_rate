@@ -58,7 +58,17 @@ changeOrg();
   console.log(""+ inputval)
   var E = (inputval - localStorage.messages)
   console.log("return: "+(inputval - localStorage.messages) )
- console.log("by: "+(inputval- E))               
+ console.log("by: "+(inputval- E))    
+ function fish() {
+ console.log(""+ audValue)
+        if(inputval == E || inputval < E) {
+        alert("bang! the rate is lower!")
+        if (cenaCheckbox.checked) {
+        audio.play();
+        }
+        }
+    }
+    setInterval(fish,60000)
     }
 	</script>
    <script>
