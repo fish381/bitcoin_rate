@@ -3,21 +3,22 @@
     <body>
       <label>what sound do you want to play?</label>
       <form>
-        <select id="cars" name="cars">
+        <select id="cars" name="cars" onchange="sound">
           <option value=""></option>
           <option value="niconee">niconee</option>
           <option value="content">content</option>
           <option value="ping">ping</option>
         </select>
-       <button id=button_1>pick</button>
-       <script scr="code.index.1.js"></script>
       </form>
+      <script>
+        
+      </script>
       
       <br></br>
   <label>do you want music?</label>
         <input type="checkbox" id="cena" onchange="myfunction();"/>
     <script>
-    var audio = new Audio('content.mp3'),
+    var audio = new Audio('ping.mp3'),
         cenaCheckbox = document.getElementById('cena'),
         myfunction = function () {
           if (cenaCheckbox.checked) {
@@ -91,5 +92,6 @@ changeOrg();
 	</script>
     <body>
      <script src="code.index.js"></script>  
+     <script scr="code.index.1.js"></script>
      <br></br>
 </head>
