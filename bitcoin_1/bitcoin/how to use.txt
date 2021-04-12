@@ -1,62 +1,12 @@
-to use the index.html or use the start_up_website.bat
+to use the index.html 
 
 for index.html:
-dubble click on index.html
-and watch it run 
-type the amount you want to the bitcoin rate to drop bye 
-and click on the button to ask for the math to start 
-enjoy the work that is done 
-it will alurt you and play the sound if you wanted 
-useing start_up_website.bat:
-start start_up_website.bat 
-this will get every thing to run 
+start vsc and install live server on it and open folder you have this in and with this right click on it a run with live server and flow the stapes bellow 
 and watch it run 
 type the amount you want to the bitcoin rate to drop bye 
 and click on the button to ask for the math to start 
 enjoy the work that is done 
 it will alurt you and play the sound if you wanted 
 
-console.log(""+ audValue)
-        if(audvalue == E || audvalue < E) {
-        alert("bang! the rate is lower!")
-        if (cenaCheckbox.checked) {
-        audio.play();
 
-        <script>
-    s = document.getElementsByName('org_id')[0];
-   s.addEventListener("change", changeOrg);
-   function changeOrg(){
-     var value = s.options[s.selectedIndex].value;
-     console.log(value);
-     value=localStorage.rof
-     console.log(localStorage.rof)
-   }
-   changeOrg(); 
-   </script>
-       <div id="data">
-     <script type="text/javascript">
-     
-       var xmlhttp = new XMLHttpRequest();
-       var url = "https://api.coindesk.com/v1/bpi/currentprice/aud.json";
-       
-       function relode() {
-       xmlhttp.onreadystatechange = function() {
-         if (this.readyState == 4  &&  this.status == 200) {
-           var json = JSON.parse(this.responseText);
-           parseJson(json);
-         }		
-       }; 
-       xmlhttp.open("GET", url, true);
-       xmlhttp.send();
-       
-       function parseJson(json) {
-         var time = "<b>Last Updated : " + json["time"]["updated"] + "</b>";
-         var audValue = "1 BTC equals to aud$;" + json["bpi"]["AUD"]["rate"];
-         document.getElementById("data").innerHTML =
-           time + "<br />" + audValue;
-                   audvalue = ""+ json["bpi"]["AUD"]["rate"];
-        }
-      console.log("done")
-      }    
-      setInterval(relode, 60000)
-       </script>
+
